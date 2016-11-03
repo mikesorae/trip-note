@@ -17,7 +17,8 @@
   },
   "scripts": {
     "watch": "webpack --watch --progress",
-    "build": "webpack"
+    "build": "webpack",
+    "postinstall": "npm run build"
   },
   "repository": {
     "type": "git",
