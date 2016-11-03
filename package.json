@@ -18,7 +18,7 @@
   "scripts": {
     "watch": "webpack --watch --progress",
     "build": "webpack",
-    "postinstall": "npm run build"
+    "heroku-postbuild": "npm run build"
   },
   "repository": {
     "type": "git",
