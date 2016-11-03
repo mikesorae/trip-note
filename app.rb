@@ -12,10 +12,14 @@ class Stay < ActiveRecord::Base
 end
 
 get "/" do
+  File.read(File.join('public', 'index.html'))
+end
+
+get "/stays" do
   Stay.all.to_json
 end
 
-post '/' do
+post '/stays' do
   stay = Stay.new
   stay.place = params[:place]
   stay.save!
