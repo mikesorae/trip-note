@@ -25,7 +25,7 @@
     "url": "git@mikesorae.github:mikesorae/trip-note.git"
   },
   "engines": {
-    "node": ">= 4.4.0"
+    "node": "~=4.4.0"
   },
   "author": "",
   "license": "MIT"
