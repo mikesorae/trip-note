@@ -5,7 +5,7 @@ development:
 production:
   encoding: unicode
   adapter: postgresql
-  username: trip-note
+  username: <%= ENV['USER'] %>
   port: <%= ENV['PORT'] %>
   host: <%= ENV['HOST'] %>
   database: <%= ENV['DATABASE'] %>
