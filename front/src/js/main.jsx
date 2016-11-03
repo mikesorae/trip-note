@@ -1,13 +1,15 @@
 import React from 'react';
 import { render } from 'react-dom';
 
-import Hello from './components/hello';
-import World from './components/world';
+import NavBar from './components/nav_bar';
+import PlaceList from './components/place_list';
+
+let places = ["sample1", "sample2"];
 
 render(
-    <div>
-        <Hello />
-        <World />
-    </div>,
-    document.getElementById('app')
+  <div>
+    <NavBar />
+    <PlaceList places={ places }  />
+  </div>,
+  document.getElementById('app')
 );
