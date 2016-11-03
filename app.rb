@@ -14,6 +14,6 @@ end
 
 post '/' do
   stay = Stay.new
-  place.place = params[:place]
-  place.save!
+  stay.place = params[:place]
+  stay.save!
 end
