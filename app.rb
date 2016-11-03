@@ -1,8 +1,11 @@
 require "sinatra"
 require "active_record"
+require 'yaml'
+require 'erb'
 
-ActiveRecord::Base.configurations = YAML.load_file('config/database.yml')
-db_config = ActiveRecord::Base.configurations["development"]
+db_config_yaml = 
+ActiveRecord::Base.configurations = YAML.load(ERB.new(IO.read('config/database.yml')).result)
+db_config = ActiveRecord::Base.configurations[ENV["RACK_ENV"]]
 ActiveRecord::Base.establish_connection(db_config)
 
 class Stay < ActiveRecord::Base
