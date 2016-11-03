@@ -1,3 +1,5 @@
+.env
+db/*.sqlite3
 
 # Created by https://www.gitignore.io/api/ruby,npm
 
