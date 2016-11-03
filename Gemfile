@@ -8,6 +8,7 @@ gem 'sinatra-activerecord'
 gem 'activerecord'
 
 group :development do
+  gem "sinatra-contrib"
   # Build tool
   gem 'rake'
   # SQLite

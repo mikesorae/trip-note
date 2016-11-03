@@ -2,6 +2,7 @@ require "sinatra"
 require "active_record"
 require 'yaml'
 require 'erb'
+require "sinatra/reloader" if development?
 
 db_config_yaml = 
 ActiveRecord::Base.configurations = YAML.load(ERB.new(IO.read('config/database.yml')).result)
