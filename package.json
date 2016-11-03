@@ -16,7 +16,8 @@
     "webpack-dev-server": "^1.16.2"
   },
   "scripts": {
-    "watch": "webpack --watch --progress"
+    "watch": "webpack --watch --progress",
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
