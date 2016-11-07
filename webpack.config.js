@@ -18,5 +18,6 @@ module.exports = {
   },
   resolve: {
     extensions: ['', '.js', '.jsx']
-  }
+  },
+  resolve: { root: [ path.resolve('./front/src/js') ] }
 }
